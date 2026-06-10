@@ -1,0 +1,14 @@
+# ---- 运行时生成的数据 / 配置（保持 git 工作区干净，git pull 不冲突）----
+# Runtime-generated data & config — keeps the tree clean so upstream pulls fast-forward.
+/data/
+/output/
+/assets/
+/global_config.json
+/history.json
+/API/.env
+
+# 本地部署文件（按需保留，不必提交到上游）
+# Local deployment files
+/.env
+__pycache__/
+*.pyc

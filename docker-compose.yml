@@ -1,0 +1,11 @@
+services:
+  infinite-canvas:
+    build: .
+    container_name: infinite-canvas
+    ports:
+      - "3000:3000"          # 浏览器访问 http://localhost:3000
+    volumes:
+      - .:/app               # 挂载整个代码目录：git pull 后重启即生效，无需重建镜像
+    env_file:
+      - .env                 # 可选：把 API key 等放这里（见下方说明），不存在也能跑
+    restart: unless-stopped
